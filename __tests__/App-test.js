@@ -47,18 +47,18 @@ it('Fingerprint.getPhaseColour PHASE_FAILED', () => {
 
 it('Fingerprint.getPhaseText PHASE_READY', () => {
   let fingerprint = renderer.create(<Fingerprint />).getInstance();
-  let colour = fingerprint.getPhaseText(constValues.PHASE_READY);
-  expect(colour).toBe(texts.fingerprint_004)
+  let text = fingerprint.getPhaseText(constValues.PHASE_READY);
+  expect(text).toBe(texts.fingerprint_004)
 });
 
 it('Fingerprint.getPhaseText PHASE_SUCCESS', () => {
   let fingerprint = renderer.create(<Fingerprint />).getInstance();
-  let colour = fingerprint.getPhaseText(constValues.PHASE_SUCCESS);
-  expect(colour).toBe(texts.fingerprint_006)
+  let text = fingerprint.getPhaseText(constValues.PHASE_SUCCESS);
+  expect(text).toBe(texts.fingerprint_006)
 });
 
 it('Fingerprint.getPhaseText PHASE_FAILED', () => {
   let fingerprint = renderer.create(<Fingerprint />).getInstance();
-  let colour = fingerprint.getPhaseText(constValues.PHASE_FAILED);
-  expect(colour).toBe(texts.fingerprint_005)
+  let text = fingerprint.getPhaseText(constValues.PHASE_FAILED);
+  expect(text).toBe(texts.fingerprint_005)
 });
